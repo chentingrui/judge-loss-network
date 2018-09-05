@@ -17,26 +17,30 @@ It will help you get the network status , if it is no network.
 But you also need wait for "deviceready"
 </br>
 <code>
-    document.addEventListener("deviceready", function () {
   
+    document.addEventListener("deviceready", function () {
       if (navigator.connection) {
           var networkState = navigator.connection.type;
           if (networkState === Connection.NONE) {
               network.online = false;
           }
       }
-  });
+    })
+  
 </code>
 
 3. you also need some listener to check networkstatus
 <br>
 <code>
-document.addEventListener("offline", function(){
-})
+  
+  document.addEventListener("offline", function(){
+  })
+
 document.addEventListener("online", function(){
 })
 window.addEventListener("offline", function(){
 })
 window.addEventListener("online", function(){
 })
+
 </code>
