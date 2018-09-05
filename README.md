@@ -12,8 +12,10 @@ this JS is used for judge if loss network
 <code>
   navigator.connection.type === Connection.NONE
 </code>
+</br>
 It will help you get the network status , if it is no network.
 But you also need wait for "deviceready"
+</br>
 <code>
     document.addEventListener("deviceready", function () {
       if (navigator.connection) {
@@ -26,6 +28,7 @@ But you also need wait for "deviceready"
 </code>
 
 3. you also need some listener to check networkstatus
+<br>
 <code>
 document.addEventListener("offline", function(){
 })
