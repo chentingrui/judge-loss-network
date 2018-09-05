@@ -18,6 +18,7 @@ But you also need wait for "deviceready"
 </br>
 <code>
     document.addEventListener("deviceready", function () {
+  
       if (navigator.connection) {
           var networkState = navigator.connection.type;
           if (networkState === Connection.NONE) {
