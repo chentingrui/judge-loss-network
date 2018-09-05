@@ -31,16 +31,21 @@ But you also need wait for "deviceready"
 
 3. you also need some listener to check networkstatus
 <br>
-<code>
-  
+<pre>
+
   document.addEventListener("offline", function(){
   })
 
-document.addEventListener("online", function(){
-})
-window.addEventListener("offline", function(){
-})
-window.addEventListener("online", function(){
-})
+  document.addEventListener("online", function(){
+  
+  })
+  
+  window.addEventListener("offline", function(){
+  
+  })
+  
+  window.addEventListener("online", function(){
+  
+  })
 
-</code>
+</pre>
