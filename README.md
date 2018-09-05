@@ -37,15 +37,12 @@ But you also need wait for "deviceready"
   })
 
   document.addEventListener("online", function(){
-  
   })
   
-  window.addEventListener("offline", function(){
-  
+  window.addEventListener("offline", function(){  
   })
   
-  window.addEventListener("online", function(){
-  
+  window.addEventListener("online", function(){  
   })
 
 </pre>
